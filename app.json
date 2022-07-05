@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "benefits-test",
-    "slug": "benefits-test",
+    "name": "BenefitsTestApp",
+    "slug": "BenefitsTestApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +18,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.leandroapache.BenefitsTestApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.leandroapache.BenefitsTestApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

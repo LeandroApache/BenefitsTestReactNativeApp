@@ -1,0 +1,230 @@
+{
+  "categories": [
+    {
+      "id": "0",
+      "title": "Все скидки",
+      "icon": "flame-outline"
+    },
+    {
+      "id": "1",
+      "title": "Кафе и бары",
+      "icon": "cafe-outline"
+    },
+    {
+      "id": "2",
+      "title": "Образование и хобби",
+      "icon": "book-outline"
+    },
+    {
+      "id": "3",
+      "title": "Спорт и отдых",
+      "icon": "bicycle-outline"
+    },
+    {
+      "id": "4",
+      "title": "Развлечения",
+      "icon": "game-controller-outline"
+    },
+    {
+      "id": "5",
+      "title": "Здоровье и красота",
+      "icon": "medkit-outline"
+    }
+  ],
+  "benefits": [
+    {
+      "id": "1",
+      "title": "Бутлегер Бар",
+      "img": "butlegerBar.jpg",
+      "discount": "10%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "2",
+      "title": "Лес Гастробар",
+      "img": "les.jpg",
+      "discount": "20%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "3",
+      "title": "Gan Bei",
+      "img": "ganBei.jpg",
+      "discount": "20%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "4",
+      "title": "Elementum",
+      "img": "elementum.jpg",
+      "discount": "20%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "5",
+      "title": "На дне бар",
+      "img": "naDne.jpg",
+      "discount": "15%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "6",
+      "title": "Sabroso",
+      "img": "sabroso.jpg",
+      "discount": "10%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "7",
+      "title": "Бар чердак",
+      "img": "cherdak.jpg",
+      "discount": "20%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "8",
+      "title": "SPARKE_CANDLEBOX",
+      "img": "candlebox.jpg",
+      "discount": "20%",
+      "categoryId": "2",
+      "isNew": "false"
+    },
+    {
+      "id": "9",
+      "title": "Pasta DELI",
+      "img": "pastaDeli.jpg",
+      "discount": "10%",
+      "categoryId": "1",
+      "isNew": "false"
+    },
+    {
+      "id": "10",
+      "title": "CANDLES HARMONY",
+      "img": "harmony.jpg",
+      "discount": "10%",
+      "categoryId": "2",
+      "isNew": "false"
+    },
+    {
+      "id": "11",
+      "title": "Lara Warm",
+      "img": "warm.jpg",
+      "discount": "20%",
+      "categoryId": "3",
+      "isNew": "false"
+    },
+    {
+      "id": "12",
+      "title": "Moscow Business School",
+      "img": "businessSchool.jpg",
+      "discount": "20%",
+      "categoryId": "3",
+      "isNew": "false"
+    },
+    {
+      "id": "13",
+      "title": "English Dom",
+      "img": "englishDom.jpg",
+      "discount": "10%",
+      "categoryId": "3",
+      "isNew": "true"
+    },
+    {
+      "id": "14",
+      "title": "Robolab",
+      "img": "robolab.jpg",
+      "discount": "20%",
+      "categoryId": "3",
+      "isNew": "true"
+    },
+    {
+      "id": "15",
+      "title": "Школа магии",
+      "img": "magic.jpg",
+      "discount": "15%",
+      "categoryId": "3",
+      "isNew": "false"
+    },
+    {
+      "id": "16",
+      "title": "Zet Academy",
+      "img": "zet.jpg",
+      "discount": "30%",
+      "categoryId": "3",
+      "isNew": "false"
+    },
+    {
+      "id": "17",
+      "title": "Лит Рес",
+      "img": "litRes.jpg",
+      "discount": "20%",
+      "categoryId": "3",
+      "isNew": "false"
+    },
+    {
+      "id": "18",
+      "title": "SkyEng",
+      "img": "skyeng.jpg",
+      "discount": "5%",
+      "categoryId": "3",
+      "isNew": "false"
+    },
+    {
+      "id": "19",
+      "title": "Golf Park",
+      "img": "golf.jpg",
+      "discount": "10%",
+      "categoryId": "4",
+      "isNew": "false"
+    },
+    {
+      "id": "20",
+      "title": "Igromastery",
+      "img": "igromastery.jpg",
+      "discount": "20%",
+      "categoryId": "4",
+      "isNew": "false"
+    },
+    {
+      "id": "21",
+      "title": "HeroPark",
+      "img": "heroPark.jpg",
+      "discount": "20%",
+      "categoryId": "4",
+      "isNew": "false"
+    },
+    {
+      "id": "22",
+      "title": "Rock Star",
+      "img": "rock.jpg",
+      "discount": "20%",
+      "categoryId": "4",
+      "isNew": "true"
+    },
+    {
+      "id": "23",
+      "title": "KUSHETKA",
+      "img": "kushetka.jpg",
+      "discount": "5%",
+      "categoryId": "5",
+      "isNew": "false"
+    },
+    {
+      "id": "24",
+      "title": "MOHITO",
+      "img": "mohito.jpg",
+      "discount": "10%",
+      "categoryId": "5",
+      "isNew": "false"
+    }
+  ]
+}
+
+
