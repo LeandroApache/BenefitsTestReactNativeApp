@@ -50,12 +50,12 @@ export default function Navigation() {
 
 const styles = StyleSheet.create({
     navigationContainer: {
-        height: 60,
+        height: 64,
         width: "100%",
-        paddingRight: 10,
+        paddingVertical: 12,
         borderBottomWidth: 1,
         borderBottomColor: COLORS.backgroundDark,
         alignItems: 'center',
         backgroundColor: COLORS.background,
     }
-})
+});

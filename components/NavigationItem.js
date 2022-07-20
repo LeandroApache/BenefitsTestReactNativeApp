@@ -6,19 +6,18 @@ import {Ionicons} from "@expo/vector-icons";
 export default React.memo(function NavigationItem({title, onPressItem, index, chosenIndex, iconName}) {
     const isCurrentPage = index === chosenIndex;
 
-    return <View style={[styles.container, {backgroundColor: isCurrentPage ? COLORS.surface : COLORS.backgroundDark}]}>
-        <Pressable onPress={onPressItem} android_ripple={{color: COLORS.surface}} style={styles.button}>
-            <Ionicons style={{marginRight: 5}} name={iconName} size={25} color={isCurrentPage ? COLORS.primary : COLORS.background}/>
-            <Text style={[styles.title, {color: isCurrentPage ? COLORS.primary : COLORS.background}]}>{title}</Text>
+    return <View style={[styles.container, {backgroundColor: isCurrentPage ? COLORS.activeLink : COLORS.inactiveLink}]}>
+        <Pressable onPress={onPressItem} android_ripple={{color: COLORS.secondaryText}} style={styles.button}>
+            <Ionicons style={{marginRight: 7.3}} name={iconName} size={15} color={isCurrentPage ? COLORS.secondaryText : COLORS.primaryText}/>
+            <Text style={[styles.title, {color: isCurrentPage ? COLORS.secondaryText : COLORS.primaryText}]}>{title}</Text>
         </Pressable>
     </View>
 })
 
 const styles = StyleSheet.create({
     container: {
-        marginVertical: 10,
         marginLeft: 10,
-        borderRadius: 10,
+        borderRadius: 12,
         elevation: 4,
         shadowRadius: 5,
         shadowOffset: {width: 2, height: 2},
@@ -31,11 +30,12 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: 'center',
         justifyContent: "space-between",
-        paddingHorizontal: 10,
+        padding: 12,
     },
     title: {
-        fontSize: 14,
-        fontWeight: "700",
-        textTransform: "uppercase"
+        fontSize: 15,
+        lineHeight: 16,
+        textAlign: "center",
+        fontFamily: "main-bold"
     }
 })

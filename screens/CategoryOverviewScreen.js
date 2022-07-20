@@ -32,6 +32,7 @@ export default function CategoryOverviewScreen({route, navigation}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        paddingTop: 24,
         paddingLeft: 5,
         paddingRight: 15,
         backgroundColor: COLORS.background
@@ -42,11 +43,10 @@ const styles = StyleSheet.create({
         paddingLeft: 15,
     },
     title: {
-        fontSize: 25,
-        fontWeight: "700",
-        textTransform: "uppercase",
-        letterSpacing: 1.2,
-        color: COLORS.primary
+        fontSize: 28,
+        lineHeight: 28,
+        fontFamily: "main-bold",
+        color: COLORS.primaryText
     },
 });
 

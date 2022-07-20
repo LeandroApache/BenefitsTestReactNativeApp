@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Image, StyleSheet, TouchableOpacity, View, Text, Pressable, Dimensions} from "react-native";
 import createImagePath from "../../services/createImagePath";
 import COLORS from "../../constants/colors";
 import {navigate} from "../../navigation/RootNavigation";
+import DiscountLabel from "../DiscountLabel";
+import {RootContext} from "../../store";
+import {AntDesign} from "@expo/vector-icons";
 
 const {width, height} = Dimensions.get("window");
 
 export default function CategoriesListItem({item, isNoveltiesItem}) {
+    const {ids} = useContext(RootContext);
+
     const imageSource = createImagePath(item.img);
+
+    const isItemFavorite = ids.includes(item.id);
 
     const showDetailsHandler = () => {
         navigate("Benefit", {benefitId: item.id});
@@ -18,7 +25,12 @@ export default function CategoriesListItem({item, isNoveltiesItem}) {
             <View style={styles.imageContainer}>
                 <Image style={styles.image} resizeMode={"cover"}
                        source={imageSource}/>
-                <Text style={[styles.discount, isNoveltiesItem ? {top: '85%'} : null]}>{item.discount}</Text>
+                <DiscountLabel>{item.discount}</DiscountLabel>
+                {isItemFavorite &&
+                <View style={styles.favoriteIconContainer}>
+                    <AntDesign name={'heart'} size={20}
+                               color={COLORS.activeLink}/>
+                </View>}
             </View>
             {!isNoveltiesItem && <View style={styles.titleContainer}>
                 <Text style={styles.title}>{item.title}</Text>
@@ -57,22 +69,21 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     title: {
-        color: COLORS.primary,
-        opacity: 0.5,
-        fontSize: 12,
-        fontWeight: "bold",
+        color: COLORS.primaryText,
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: "main-bold"
     },
-    discount: {
+    favoriteIconContainer: {
         position: "absolute",
-        top: "75%",
-        left: "5%",
-        paddingVertical: 3,
-        paddingHorizontal: 7,
+        top: 12,
+        right: 12,
+        alignItems: "center",
+        justifyContent: "center",
+        width: 40,
+        height: 40,
         borderRadius: 20,
-        color: COLORS.primary,
-        backgroundColor: COLORS.secondary,
-        textAlign: "center",
-        fontWeight: "700"
+        backgroundColor: COLORS.background,
     }
 })
 

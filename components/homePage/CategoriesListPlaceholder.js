@@ -43,12 +43,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         borderColor: COLORS.backgroundDark,
         backgroundColor: COLORS.background,
-        elevation: 4,
-        shadowRadius: 8,
-        shadowOffset: {width: 2, height: 2},
-        shadowOpacity: 0.2,
-        shadowColor: "black",
-        overflow: "hidden"
+        overflow: "hidden",
     },
     button: {
         flex: 1,
@@ -57,7 +52,11 @@ const styles = StyleSheet.create({
     },
     link: {
         paddingHorizontal: 20,
-        textAlign: "center"
+        textAlign: "center",
+        fontWeight: "600",
+        fontSize: 14,
+        lineHeight: 16,
+        color: "#989BB3"
     },
 })
 

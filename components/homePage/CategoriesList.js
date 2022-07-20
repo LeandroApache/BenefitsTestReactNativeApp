@@ -56,16 +56,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     link: {
-        color: COLORS.surface,
-        fontSize: 15,
-        fontWeight: "bold"
+        color: "#2F50F4",
+        fontSize: 14,
+        lineHeight: 16,
+        fontFamily: 'main-bold'
     },
     title: {
-        fontSize: 15,
-        fontWeight: "bold",
-        color: COLORS.primary,
-        textTransform: "uppercase",
-        letterSpacing: 1.2
+        fontSize: 20,
+        color: COLORS.primaryText,
+        lineHeight: 24,
+        fontFamily: "main-bold"
     },
     body: {
         flex: 1,

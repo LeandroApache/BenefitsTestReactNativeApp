@@ -1,9 +1,11 @@
 const COLORS = {
-    background: "#f5f0e1",
+    primaryText: "#19224C",
+    secondaryText: "#FFFFFF",
+    background: 'rgba(255, 255, 255, 0.9)',
     backgroundDark: "#62615e",
-    primary: "#1e3d59",
-    secondary: "#ff6e40",
-    surface: "#ffc13b"
+    activeLink: "#2F50F4",
+    inactiveLink: "#F0F0F5",
+    discount: "#FF245B"
 }
 
 export default COLORS;
